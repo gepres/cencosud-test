@@ -1,38 +1,112 @@
-.App {
+
+
+.carrito-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carrito-header span{
+font-size: 2rem;
+}
+
+.carrito-main{
+  background: linear-gradient(173deg, rgba(255,255,255,1) 1%, rgba(197,197,197,1) 56%);
+  height:100vh;
+}
+.carrito-main .title{
+  font-size: 1.2rem;
   text-align: center;
+  padding: .5rem;
+}
+.col-product{
+  background-color: #fff;
+  border-radius:5px;
+  padding: 10px 15px !important;
+  margin-bottom: 1.3rem;
+}
+.product-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-details img{
+width: 80px;
+height: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-details__text{
   display: flex;
   flex-direction: column;
+}
+
+.carrito-footer{
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
   align-items: center;
+}
+
+.carrito-footer__text{
+  display: flex;
+  flex-direction: column;
+}
+
+.carrito-footer a{
+  background: #fff;
+  color: #00c853;
+  border: 1px solid #00c853;
+  text-transform: lowercase;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  box-shadow: none;
+}
+.carrito-footer a:hover{
+  background: #fff;
+  color: #00c853;
+}
+
+.detallesPago-monto{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.detallesPago-monto span{
+  float: right;
+}
+
+.border-img{
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.content-pagar{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 3rem;
+}
+.content-pagar button{
+  color: #fff;
+  background: #64dd17;
+  padding: 13px 5rem;
+  font-size: 2rem;
+  border-radius: 30px;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.product-details-col{
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detallesPago-content-precio{
+  font-size: 1.4rem;
+  font-weight: 500;
 }
