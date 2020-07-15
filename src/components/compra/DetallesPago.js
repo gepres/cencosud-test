@@ -1,27 +1,7 @@
-import React,{Fragment,useState, useEffect} from 'react'
-
-function DetallesPago({datos}) {
-  console.log(datos);
-  const [productos,guardarproductos] = useState([
-    {
-      producto:'Manzana',
-      cantidad:1,
-      precio:10.00,
-      image:'https://valenciagastronomica.com/wp-content/uploads/2016/12/manzana.jpg'
-    },
-    {
-      producto:'pera',
-      cantidad:1,
-      precio:11.00,
-      image:'https://media.mercola.com/assets/images/foodfacts/pear-nutrition-facts.jpg'
-    },
-    {
-      producto:'naranza',
-      cantidad:1,
-      precio:12.00,
-      image:'https://lh3.googleusercontent.com/proxy/YH5g6ItVARGdmIUhoEWD63r8P1rNi3-d4t7_z4DbP3bRybk-aahyg26fpppu-IuhKm3CjwA0C38qpl_hA-uJxjkDTtOAwD4dmVLQJoAhz1Q4uVCGjL1gqWzTlt7QSDsqTDkG3SyBEeD1J0Qcg6Kbu-EowNI5ylsM'
-    }
-  ])
+import React,{Fragment, useContext} from 'react'
+import {CRMContext} from '../../context/CRMContext'
+function DetallesPago() {
+  const [productos,guardarproductos] = useContext(CRMContext)
 
   let nuevoTotal = 0;
   productos.map(producto => nuevoTotal += (producto.cantidad * producto.precio))
