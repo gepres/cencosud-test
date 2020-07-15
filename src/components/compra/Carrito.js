@@ -113,7 +113,6 @@ function Carrito(props) {
          <span>Total</span>
           <b>$ {total}.00</b>
        </div>
-      
        <Link to={"/detalles"} className="waves-effect waves-light btn-large">ir a pagar <i className="fas fa-chevron-right"></i></Link>
     </footer>
    </Fragment>

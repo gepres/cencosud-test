@@ -20,7 +20,7 @@ font-size: 2rem;
 }
 .col-product{
   background-color: #fff;
-  border-radius:5px;
+  border-radius:13px;
   padding: 10px 15px !important;
   margin-bottom: 1.3rem;
 }
@@ -39,7 +39,12 @@ height: 80px;
   display: flex;
   flex-direction: column;
 }
-
+.detallesPago__text{
+  display: flex;
+}
+.detallesPago__text span{
+  margin-left: 1rem;
+}
 .carrito-footer{
   position: fixed;
   bottom: 0;
@@ -109,4 +114,8 @@ height: 80px;
 .detallesPago-content-precio{
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.dnone{
+  display: none !important;
 }

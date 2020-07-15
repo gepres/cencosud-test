@@ -1,7 +1,7 @@
 import React,{Fragment,useState, useEffect} from 'react'
 
-function DetallesPago({producto}) {
-  console.log(producto);
+function DetallesPago({datos}) {
+  console.log(datos);
   const [productos,guardarproductos] = useState([
     {
       producto:'Manzana',
@@ -42,9 +42,9 @@ function DetallesPago({producto}) {
           { productos.map((item,index) => (
             <div className="col s12 product-details-col"  key={item.producto}>
               <div  className="product-details">
-                <img className="border-img" src={item.image} alt={item.producto} />
-                <div className="product-details__text">
-                    <span className="grey-text">{item.producto}</span>
+                <div className="detallesPago__text">
+                  <img className="border-img" src={item.image} alt={item.producto} />
+                  <span className="grey-text">{item.producto}</span>
                 </div>
                 <div className="product-details__actions detallesPago-content-precio">
                   <span className="grey-text">$ {item.precio}</span>
